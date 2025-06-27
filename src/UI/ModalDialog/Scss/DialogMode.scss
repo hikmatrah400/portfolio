@@ -1,0 +1,42 @@
+@use "./Functions.scss" as f;
+
+@mixin DialogMode() {
+  .modal-container.success {
+    @include f.dialogHeaderBackColor(f.$successColor, #fff);
+    @include f.dialogFooterBtnStyle(f.$successColor, #fff, f.$successColor);
+  }
+  .modal-container.error {
+    @include f.dialogHeaderBackColor(f.$errorColor, #fff);
+    @include f.dialogFooterBtnStyle(f.$errorColor, #fff, f.$errorColor);
+  }
+  .modal-container.info {
+    @include f.dialogHeaderBackColor(f.$infoColor, #fff);
+    @include f.dialogFooterBtnStyle(f.$infoColor, #fff, f.$infoColor);
+  }
+  .modal-container.warning {
+    @include f.dialogHeaderBackColor(f.$warningColor, var(--text-color));
+    @include f.dialogFooterBtnStyle(
+      f.$warningColor,
+      var(--text-color),
+      var(--text-color)
+    );
+  }
+
+  // For Dark Mode -------------------------------------------------
+  .modal-container-dark.success {
+    @include f.dialogHeaderBackColor(f.$successColor, #fff);
+    @include f.dialogFoooterBtnDarkMode(f.$successColor, #fff);
+  }
+  .modal-container-dark.error {
+    @include f.dialogHeaderBackColor(f.$errorColor, #fff);
+    @include f.dialogFoooterBtnDarkMode(f.$errorColor, #fff);
+  }
+  .modal-container-dark.info {
+    @include f.dialogHeaderBackColor(f.$infoColor, #fff);
+    @include f.dialogFoooterBtnDarkMode(f.$infoColor, #fff);
+  }
+  .modal-container-dark.warning {
+    @include f.dialogHeaderBackColor(f.$warningColor, #2b2b2b);
+    @include f.dialogFoooterBtnDarkMode(f.$warningColor, #2b2b2b);
+  }
+}

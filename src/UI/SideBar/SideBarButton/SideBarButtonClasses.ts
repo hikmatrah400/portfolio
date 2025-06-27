@@ -1,0 +1,17 @@
+export const sideBarButtonClasses = {
+  root: "item-root",
+  button: "item-button",
+  selected: "item-selected",
+  expanded: "item-expanded",
+  active: "item-active",
+  disabled: "item-disabled",
+  itemContent: "item-content",
+  elementContainer: "item-elementContainer",
+  icon: "item-icon",
+  element: "item-element",
+  title: "sideBar-title",
+  titleContainer: "title-container",
+  collapseGroup: "sideBar-collapseGroup",
+  itemsCollapseGroup: "sideBar-itemsCollapseGroup",
+  titleCollapseGroup: "sideBar-titleCollapseGroup",
+};

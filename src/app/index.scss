@@ -1,0 +1,76 @@
+* {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+body {
+  overflow: hidden;
+  color: #126ee6;
+}
+
+:root {
+  --primary-light: rgb(119, 237, 139);
+  --primary-dark: rgb(17, 141, 87);
+  --primary-main: #22c55e;
+}
+
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+@supports (-webkit-appearance: none) {
+  *::-webkit-scrollbar-track {
+    background: transparent; /* track color */
+  }
+
+  /* target the scrollbar track (background) */
+  *::-webkit-scrollbar {
+    width: 8px; /* Adjust for desired thinness */
+    height: 8px;
+    background: transparent;
+  }
+
+  /* target the scrollbar thumb for light mode */
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* target the scrollbar thumb for dark mode */
+  [data-mui-color-scheme="dark"] *::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+
+  /* target the hover state of the thumb in dark mode */
+  [data-mui-color-scheme="dark"] *::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+  }
+
+  /* remove buttons */
+  *::-webkit-scrollbar-button {
+    display: none;
+  }
+}
+
+@supports (-moz-appearance: none) {
+  /* firefox specific styles */
+
+  /* adjust scrollbar width */
+  * {
+    scrollbar-width: thin; /* "auto" or "thin" for Firefox */
+  }
+}
+
+@media screen and (max-width: 786px) {
+  @supports (-webkit-appearance: none) {
+    *::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+  }
+}

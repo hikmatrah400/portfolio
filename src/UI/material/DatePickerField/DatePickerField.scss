@@ -1,0 +1,93 @@
+
+
+.MuiStack-root.css-vuxupg-MuiStack-root {
+  padding-top: 0;
+}
+
+.muiDatePicker {
+  .MuiInputBase-root {
+    line-height: 0;
+    font-size: 0.9rem;
+    border-radius: 0.4rem;
+    padding: 0.1rem 0.1rem !important;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .MuiInputAdornment-root .MuiButtonBase-root {
+      margin-right: 0rem;
+
+      svg {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.MuiPickersLayout-root {
+  .MuiPickersCalendarHeader-label {
+    font-size: 1.1rem;
+  }
+
+  svg {
+    font-size: 1.25rem;
+  }
+
+  .MuiDayCalendar-weekDayLabel {
+    font-size: 0.8rem;
+    color: #1976d2;
+  }
+
+  span {
+    text-transform: capitalize;
+  }
+
+  button {
+    font-size: 0.86rem;
+    text-transform: capitalize;
+  }
+
+  .css-168e4me-MuiPickersToolbar-root-MuiDateTimePickerToolbar-root {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .MuiPickersToolbar-root {
+    .MuiTypography-overline {
+      margin-bottom: 0.5rem;
+      font-size: 0.85rem !important;
+      letter-spacing: 0;
+    }
+    .css-tna12i-MuiTypography-root-MuiPickersToolbarText-root {
+      font-size: 1.4rem;
+    }
+    .MuiDateTimePickerToolbar-timeDigitsContainer {
+      button span {
+        font-size: 1.6rem;
+      }
+      .MuiDateTimePickerToolbar-separator {
+        font-size: 1.6rem;
+        line-height: 3.1rem;
+      }
+    }
+  }
+}
+
+.css-45uc01-MuiDialog-container .css-4nopd7-MuiPaper-root-MuiDialog-paper {
+  border: none !important;
+
+  .MuiClockNumber-root {
+  }
+}
+
+.MuiPickersPopper-root {
+  .MuiPaper-root {
+    border-radius: 0.8rem;
+  }
+
+  .MuiMultiSectionDigitalClockSection-root {
+    li {
+      font-size: 0.9rem;
+      border-radius: 0.4rem;
+    }
+  }
+}

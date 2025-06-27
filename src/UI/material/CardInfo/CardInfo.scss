@@ -1,0 +1,19 @@
+.cardInfo-root {
+  height: 3.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .main {
+    display: flex;
+    align-items: center;
+  }
+
+  .number {
+    color: #1f7a1f;
+    border: 1px solid #a1e4a1;
+    background: #f6fef6;
+    padding: 0.15rem 1rem;
+    border-radius: 3.125rem;
+  }
+}
